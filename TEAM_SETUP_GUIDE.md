@@ -273,13 +273,13 @@ memory-rag-autonomous-driving/
 
 ### Implementation Timeline
 
-| Days | Phase | Notebook | Tasks |
-|------|-------|----------|-------|
-| **Nov 20-21** | Phase 1: Baseline | `01_baseline_evaluation.ipynb` | SimplePlanner evaluation, baseline metrics |
-| **Nov 22-23** | Phase 2: Data Processing | `02_data_embeddings.ipynb` | Scenario text, embeddings, FAISS setup |
-| **Nov 24-25** | Phase 3: RAG System | `03_rag_system.ipynb` | Retrieval mechanism, GPT-2 integration |
-| **Nov 26-27** | Phase 4: Memory Module | `04_memory_augmented.ipynb` | Continual updates, full system testing |
-| **Nov 28-30** | Phase 5: Evaluation | `05_final_evaluation.ipynb` | Metrics, plots, final report |
+ | Phase | Notebook | Tasks |
+ |-------|----------|-------|
+ | Phase 1: Baseline | `01_baseline_evaluation.ipynb` | SimplePlanner evaluation, baseline metrics |
+ | Phase 2: Data Processing | `02_data_embeddings.ipynb` | Scenario text, embeddings, FAISS setup |
+ | Phase 3: RAG System | `03_rag_system.ipynb` | Retrieval mechanism, GPT-2 integration |
+ | Phase 4: Memory Module | `04_memory_augmented.ipynb` | Continual updates, full system testing |
+ | Phase 5: Evaluation | `05_final_evaluation.ipynb` | Metrics, plots, final report |
 
 ---
 
@@ -446,40 +446,8 @@ The `.gitignore` file prevents these automatically!
 #### Step 5: Commit Your Changes
 
 ```bash
-git commit -m "Phase 1: Completed baseline evaluation
-
-- Loaded 6847 scenarios from nuPlan mini split
-- Executed SimplePlanner on 100 test scenarios
-- Calculated baseline metrics: collision rate, path accuracy
-- Generated baseline plots in results/plots/
-- Documented results in notebook"
+git commit -m "........."
 ```
-
-**Good Commit Message Format:**
-```
-[Phase/Component]: Brief summary (50 chars max)
-
-- Bullet point of specific change
-- Another change
-- Bug fix if any
-- Link to issue if applicable
-
-Closes #issue-number (if applicable)
-```
-
-**Examples:**
-```
-Phase 1: Added SimplePlanner baseline evaluation
-
-Phase 2: Implemented FAISS vector database for embeddings
-
-Phase 3: Integrated GPT-2 with retrieval mechanism
-
-Bug fix: Corrected scenario loading path in data_loader.py
-
-Docs: Updated README with new installation steps
-```
-
 ---
 
 #### Step 6: Push Your Branch
@@ -507,32 +475,6 @@ git push origin yourname/phase-description
    - Description: What you did, why, any notes
 6. **Tag reviewers:** Select 1-2 teammates
 7. Click **"Create pull request"**
-
-**PR Template:**
-```markdown
-## Phase [X]: [Phase Name]
-
-### What was done
-- Implemented X
-- Added Y
-- Fixed Z
-
-### Files changed
-- `notebooks/0X_phase.ipynb`
-- `src/new_module.py`
-- `results/metrics.csv`
-
-### Testing
-- [ ] Notebook runs without errors
-- [ ] Results look correct
-- [ ] Code is commented
-
-### Notes
-Any additional context, questions, or concerns.
-
-### Reviewers
-@teammate1 @teammate2
-```
 
 ---
 
@@ -584,29 +526,6 @@ git reset HEAD filename
 
 ---
 
-### Handling Merge Conflicts
-
-**When merge conflict occurs:**
-
-```bash
-# Pull latest changes
-git pull origin main
-
-# Git will show conflict in file
-# Open the file and look for:
-<<<<<<< HEAD
-Your changes
-=======
-Their changes
->>>>>>> main
-
-# Choose which version to keep, or combine them
-# Remove the conflict markers (<<<, ===, >>>)
-
-# After resolving:
-git add resolved-file.txt
-git commit -m "Resolved merge conflict in resolved-file.txt"
-```
 
 **For Jupyter Notebooks (harder to merge):**
 
@@ -776,120 +695,7 @@ conda --version
 
 ---
 
-## 📊 Team Collaboration Best Practices
 
-### Daily Workflow
-
-**Morning (Before starting work):**
-```bash
-cd ~/memory-rag-autonomous-driving
-git pull origin main
-conda activate nuplan
-```
-
-**During work:**
-- Commit small changes frequently
-- Push your branch regularly
-- Test your code before pushing
-
-**Evening (After work session):**
-```bash
-git add [files]
-git commit -m "Descriptive message"
-git push origin yourname/feature
-```
-
-**Sunday (Team meeting):**
-- Review PRs together
-- Merge approved work
-- Plan next week's tasks
-
----
-
-### Communication Guidelines
-
-**Use Discord/Slack for:**
-- Quick questions
-- Status updates
-- Coordinating who works on what
-- Scheduling meetings
-
-**Use GitHub Issues for:**
-- Bug reports
-- Feature requests
-- Task tracking
-- Discussion of implementation details
-
-**Use Pull Requests for:**
-- Code review
-- Detailed feedback on implementation
-- Approval before merging
-
----
-
-### Code Review Checklist
-
-**Before creating PR:**
-- [ ] Code runs without errors
-- [ ] Notebook cells executed in order
-- [ ] Results make sense
-- [ ] Code is commented
-- [ ] No dataset files included
-- [ ] Commit messages are clear
-
-**When reviewing teammate's PR:**
-- [ ] Read the description
-- [ ] Check changed files
-- [ ] Verify logic is correct
-- [ ] Test code if possible
-- [ ] Leave constructive comments
-- [ ] Approve or request changes
-
----
-
-## 📞 Getting Help
-
-### If You're Stuck
-
-1. **Check this guide** - especially Troubleshooting section
-2. **Check error message** - Google the exact error
-3. **Ask in team chat** - Someone may have faced same issue
-4. **Check documentation:**
-   - nuPlan: https://nuplan-devkit.readthedocs.io/
-   - PyTorch: https://pytorch.org/docs/
-   - Git: https://git-scm.com/doc
-5. **Create GitHub Issue** - Describe problem with error message and steps to reproduce
-
----
-
-## 🎓 Useful Keyboard Shortcuts
-
-### Jupyter Lab
-
-| Shortcut | Action |
-|----------|--------|
-| `Shift + Enter` | Run cell and move to next |
-| `Ctrl + Enter` | Run cell and stay |
-| `A` | Insert cell above |
-| `B` | Insert cell below |
-| `DD` | Delete cell |
-| `M` | Change to Markdown |
-| `Y` | Change to Code |
-| `Cmd/Ctrl + S` | Save notebook |
-| `Cmd/Ctrl + Shift + C` | Open command palette |
-
-### Terminal
-
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl + C` | Stop running process |
-| `Ctrl + L` | Clear screen |
-| `Ctrl + A` | Go to beginning of line |
-| `Ctrl + E` | Go to end of line |
-| `↑` / `↓` | Previous/next command |
-| `Tab` | Auto-complete |
-
----
 
 ## ✅ Quick Checklist
 
@@ -943,19 +749,6 @@ git push origin yourname/feature
 
 ---
 
-## 📧 Contact Information
-
-**Team Communication:**
-- Discord/Slack: [Your team channel]
-- GitHub: https://github.com/YOUR_USERNAME/memory-rag-autonomous-driving
-- Email: Use ASU emails for formal communication
-
-**Office Hours:**
-- Instructor: [Office hours info]
-- TAs: [TA office hours]
-
----
-
 ## 🎯 Project Goals Reminder
 
 **Our Goal:** Implement a Memory-Augmented RAG system that enables continual adaptation to long-tail autonomous driving scenarios.
@@ -971,20 +764,6 @@ git push origin yourname/feature
 - Demonstrated adaptation to rare scenarios
 - Complete report with results and analysis
 
-**Deadline:** November 30, 2025
-
 ---
 
-**Last Updated:** November 20, 2025  
-**Version:** 1.0  
-**Authors:** Team Members
 
----
-
-# 🎉 You're All Set!
-
-Follow this guide step-by-step and you'll be contributing to the project in no time!
-
-**Questions?** Ask in team chat or create a GitHub issue.
-
-**Good luck! 🚀**
