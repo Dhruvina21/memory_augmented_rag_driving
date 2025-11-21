@@ -3,10 +3,10 @@
 ## Memory-Augmented RAG for Lifelong Autonomous Driving
 
 **Team Members:**
-- Karina Shah (1224902822)
-- Dhruvina Gujarati (1224720263)
-- Nilay Kumar (1225127891)
-- Nishanth Krishna Churchmal (1232021156)
+- Karina Shah 
+- Dhruvina Gujarati 
+- Nilay Kumar 
+- Nishanth Krishna Churchmal 
 
 **Course:** CSE 475 - Foundations of Machine Learning, Fall 2025
 
