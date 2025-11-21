@@ -1,0 +1,41 @@
+# Core ML frameworks
+torch==1.9.0
+torchvision==0.10.0
+
+# NuPlan dependencies
+numpy==1.23.4
+pandas
+scipy
+matplotlib
+opencv-python
+Pillow
+
+# RAG and LLM components
+transformers
+sentence-transformers
+faiss-cpu
+langchain
+openai
+
+# GPT-2 specific
+tokenizers
+
+# Utilities
+tqdm
+pyyaml
+hydra-core==1.1.1
+jupyter
+jupyterlab
+ipywidgets
+
+# Evaluation and visualization
+seaborn
+plotly
+scikit-learn
+
+# NuPlan specific
+bokeh==2.4.3
+SQLAlchemy==1.4.27
+shapely>=2.0.0
+geopandas>=0.12.1
+pyquaternion

@@ -1,0 +1,76 @@
+# Dataset - Each team member downloads separately
+data/
+dataset/
+*.db
+*.gpkg
+nuplan-v*.zip
+
+# nuPlan specific paths
+nuplan/dataset/
+nuplan/exp/
+
+# Model files and checkpoints
+checkpoints/
+models/
+*.pth
+*.pt
+*.pkl
+*.h5
+*.ckpt
+
+# Cache and temporary files
+cache/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Embeddings and vectors (can be regenerated)
+embeddings/
+vectors/
+*.npy
+*.npz
+faiss_index/
+*.index
+
+# Large experimental outputs
+results/large_outputs/
+experiments/raw/
+*.log
+
+# Environment files
+.env
+venv/
+env/
+.venv/
+nuplan/
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Python compiled files
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+.jupyter/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Unit test / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
