@@ -1,0 +1,5 @@
+scenario_type,Relevance Mean,Relevance Std,Diversity Mean,Diversity Std,Avg Retrieved
+on_intersection,1.0,0.0,0.2,0.0,5.0
+stationary,1.0,0.0,0.2,0.0,5.0
+stationary_in_traffic,1.0,0.0,0.2,0.0,5.0
+traversing_intersection,1.0,,0.2,,5.0
